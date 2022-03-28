@@ -1,4 +1,11 @@
-
+# MySQL
+- sudo systemctl status mysql
+- sudo service mysql restart
+- show databases;
+- use my_db_spring_mvc_aop;
+- show tables;
+- SELECT * FROM my_db_spring_mvc_aop.employees;
+ 
 # REST API
 - REST - REpresentation State Transfer
 - способ коммуникации между приложениями.
@@ -63,3 +70,7 @@
   - add if not exist <artifactId>maven-war-plugin</artifactId>
   - Создание класса для реализации Dispatcher Servlet
   - Добавить  TomCat
+# Получение списка работников
+  - @RestController - Controller, управляющий REST запросами и ответами.
+    - @RequestMapping("/api") 
+    - public class MyRESTController{
