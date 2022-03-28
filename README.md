@@ -54,8 +54,12 @@
 | *DELETE*   | `api/employees/{employeeId}` | **Удаление работника**          |
 #
 
-# REST API config
+# REST API configuration
 - конфигурация приложения Spring MVC + Hibernate без участия XML файлов:
   - Подготовка БД
     - заимствуем из https://github.com/mirpribili/spring_mvc_hibernate_aop/blob/master/README.md
-    - 
+  - add dependencies
+  - создание конфигурационного Java класса
+  - add if not exist <artifactId>maven-war-plugin</artifactId>
+  - Создание класса для реализации Dispatcher Servlet
+  - Добавить  TomCat
