@@ -78,3 +78,4 @@
     @GetMapping("/employees/{id}")
     public Employee getEmployee(@PathVariable int id){
 - вот как можно получить переменную из запроса
+# Обработка исключений
