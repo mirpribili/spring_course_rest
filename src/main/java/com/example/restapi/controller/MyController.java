@@ -41,4 +41,16 @@ public class MyController {
         employeeService.saveEmployee(employee);
         return employee;
     }
+
+    @DeleteMapping("/employees/{id}")
+    public String deleteEmployee(@PathVariable int id){
+        Employee employee = employeeService.getEmployee(id); // благодаря  <artifactId>jackson-databind</artifactId> на выходе будет JSON
+
+        if(employee == null){
+            throw new NoSuchEmployeeException("There is no employee with ID = " + id + " in DB.");
+        }
+
+        employeeService.deleteEmployee(id);
+        return "Employee with ID =" + id + " was deleted";
+    }
 }

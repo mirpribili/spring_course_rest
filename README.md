@@ -1,4 +1,5 @@
 # MySQL
+- sudo mysql
 - sudo systemctl status mysql
 - sudo service mysql restart
 - show databases;
@@ -84,4 +85,5 @@
   > global_exceptions.png
 # Добавление нового работника
 # Изменение существующего
+# Удаление работника
 
